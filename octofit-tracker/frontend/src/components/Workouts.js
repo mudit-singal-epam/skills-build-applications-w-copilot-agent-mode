@@ -6,8 +6,7 @@ const Workouts = () => {
   const [filterText, setFilterText] = useState('');
   const [selectedWorkout, setSelectedWorkout] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const apiBaseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
-  const endpoint = `${apiBaseUrl}/workouts/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/workouts/`;
 
   const fetchWorkouts = useCallback(async () => {
     try {

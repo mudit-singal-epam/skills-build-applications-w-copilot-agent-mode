@@ -6,8 +6,7 @@ const Teams = () => {
   const [filterText, setFilterText] = useState('');
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const apiBaseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
-  const endpoint = `${apiBaseUrl}/teams/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/teams/`;
 
   const fetchTeams = useCallback(async () => {
     try {

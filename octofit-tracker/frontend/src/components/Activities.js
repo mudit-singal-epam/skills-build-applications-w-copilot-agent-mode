@@ -6,8 +6,7 @@ const Activities = () => {
   const [filterText, setFilterText] = useState('');
   const [selectedActivity, setSelectedActivity] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const apiBaseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
-  const endpoint = `${apiBaseUrl}/activities/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/activities/`;
 
   const fetchActivities = useCallback(async () => {
     try {

@@ -6,8 +6,7 @@ const Users = () => {
   const [filterText, setFilterText] = useState('');
   const [selectedUser, setSelectedUser] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const apiBaseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
-  const endpoint = `${apiBaseUrl}/users/`;
+  const endpoint = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/users/`;
 
   const fetchUsers = useCallback(async () => {
     try {
